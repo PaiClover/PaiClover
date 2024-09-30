@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Skills & Hard Skills</title>
+    <link rel="stylesheet" href="style_Match_the_words.css">
+</head>
+<body>
+    <header class="top-header">
+        <a class="menu-item" href="index.html">Homepage</a>
+        <a class="menu-item" href="Quiz.html">Quiz</a>
+        <a class="menu-item brand" href="Match_the_words.html">Match the words</a>
+    </header>
+
+     <!-- หน้าต้อนรับ -->
+    <div id="start-screen" class="main-box">
+        <h1>ยินดีต้อนรับเข้าสู่เกมจับคู่คำศัพท์ Soft Skills & Hard Skills</h1>
+        <p class="TextContent">กดปุ่มด้านล่างเพื่อเริ่มเกมจับคู่คำศัพท์</p>
+        <button class="TextContent" onclick="startGame()">เริ่มเกม</button>
+    </div>
+
+    <div id="game-screen" class="main-box" style="display:none;">
+        <h1>จับคู่คำศัพท์ให้ถูกต้อง</h1>
+        <p class="TextContent" id="score">คะแนน: 0</p>
+        <div class="game-container">
+            <div class="column">
+                <h2>ภาษาไทย</h2>
+                <ul id="soft-skills">
+                    <li class="TextContent" data-match="1">การออกแบบส่วนต่อประสานระหว่างผู้ใช้กับระบบ</li>
+                    <li class="TextContent" data-match="2">ทักษะการสื่อสาร</li>
+                    <li class="TextContent" data-match="3">การวิเคราะห์ข้อมูล</li>
+                    <li class="TextContent" data-match="4">ทักษะการบริหารจัดการเวลา</li>
+                    <li class="TextContent" data-match="5">การออกแบบประสบการณ์ผู้ใช้</li>
+                    <li class="TextContent" data-match="6">ทักษะความยืดหยุ่นและปรับตัว</li>
+                    <li class="TextContent" data-match="7">ความปลอดภัยและการเข้ารหัส</li>
+                    <li class="TextContent" data-match="8">ทักษะการทำงานร่วมกับผู้อื่น</li>
+                    <li class="TextContent" data-match="9">วิศวกรรมซอฟต์แวร์</li>
+                    <li class="TextContent" data-match="10">ทักษะการคิดเชิงสร้างสรรค์</li>
+                </ul>
+            </div>
+            <svg id="svg-lines" width="100%" height="500px" style="position: absolute; top: 0; left: 0; z-index: -1;"></svg>
+            <div class="column">
+                <h2>ภาษาอังกฤษ</h2>
+                <ul id="hard-skills">
+                    <li class="TextContent" data-match="1">User Interface Design</li>
+                    <li class="TextContent" data-match="2">Communication</li>
+                    <li class="TextContent" data-match="3">Data Analytics</li>
+                    <li class="TextContent" data-match="4">Time Management</li>
+                    <li class="TextContent" data-match="5">User Experience Design</li>
+                    <li class="TextContent" data-match="6">Flexibility and Adaptability</li>
+                    <li class="TextContent" data-match="7">Cybersecurity and Encryption</li>
+                    <li class="TextContent" data-match="8">Teamwork and Collaboration</li>
+                    <li class="TextContent" data-match="9">Software Engineering</li>
+                    <li class="TextContent" data-match="10">Creativity</li>
+                </ul>
+            </div>
+        </div>
+        <button class="TextContent" id="checkButton" disabled onclick="checkAnswers()">ตรวจสอบคำตอบ</button>
+        <button class="TextContent" id="resetButton" onclick="resetGame()" style="display: none;">เริ่มใหม่</button>
+        <button class="TextContent" id="showAnswerButton" onclick="showAnswers()" style="display:none;">ดูเฉลย</button>
+        <button class="TextContent" id="back-to-start-btn" style="display:none;" onclick="goToStart()">กลับไปยังหน้าเริ่มต้น</button>
+        <div id="correct-pairs" style="display: none;">
+            <h3>การจับคู่ที่ถูกต้อง:</h3>
+            <ul class="TextContent" id="correct-list"></ul>
+        </div>
+        <p class="TextContent" id="result"></p>
+    </div>
+    <footer class="bottom-footer">
+        <p>จัดทำโดย</p>
+        <p>นายธีรภัทร สิมมาวัน รหัสนักศึกษา 66122420111</p>
+        <p>นายวชรพล ทองบุราณ รหัสนักศึกษา 66122420116</p>
+        <p>&copy; Copyright 2024</p>
+    </footer>
+    <script src="script_Match_the_words.js"></script>
+</body>
+</html>

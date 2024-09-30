@@ -1,0 +1,91 @@
+html, body {
+    font-family: "Bai Jamjuree", sans-serif;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header {
+    background-color: saddlebrown;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-item {
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.main-box {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.quiz-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #d0d0d0;
+}
+
+.option.selected {
+    background-color: #4caf50;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.bottom-footer {
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+}
+
+.TextContent {
+    font-size: 18px;
+}
+
+#start-screen {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

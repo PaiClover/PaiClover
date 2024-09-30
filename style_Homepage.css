@@ -1,0 +1,60 @@
+html, body {
+    font-family: "Bai Jamjuree", sans-serif;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header {
+    background-color: saddlebrown;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-item {
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.main-box {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box {
+    padding: 10px;
+    margin: 10px;
+}
+
+.image {
+    width: 100%;
+}
+
+.TextTitle {
+    text-align: left;
+}
+
+.TextContent {
+    text-align: left;
+    font-size: 18px;
+}
+
+.TextTopic {
+    text-align: center;
+}
+
+.bottom-footer {
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+}

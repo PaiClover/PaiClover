@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Skills & Hard Skills</title>
+    <link rel="stylesheet" href="style_Quiz.css">
+</head>
+<body>
+    <header class="top-header">
+        <a class="menu-item" href="index.html">Homepage</a>
+        <a class="menu-item brand" href="Quiz.html">Quiz</a>
+        <a class="menu-item" href="Match_the_words.html">Match the words</a>
+    </header>
+    <div class="quiz-container">
+        <h1>แบบทดสอบ Soft Skills & Hard Skills</h1>
+
+        <!-- หน้าต้อนรับ -->
+        <div id="start-screen">
+            <h2>แบบทดสอบความรู้มีทั้งหมด 10 ข้อ</h2>
+            <p class="TextContent" >กดปุ่มด้านล่างเพื่อเริ่มทำแบบทดสอบ</p>
+            <button class="TextContent" onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <!-- แบบทดสอบ -->
+        <div id="quiz" class="hidden TextContent">
+            <div class="question-container">
+                <p id="question">Question will appear here</p>
+                <div class="options">
+                    <button class="option TextContent" onclick="selectOption(0)">Option 1</button>
+                    <button class="option TextContent" onclick="selectOption(1)">Option 2</button>
+                    <button class="option TextContent" onclick="selectOption(2)">Option 3</button>
+                    <button class="option TextContent" onclick="selectOption(3)">Option 4</button>
+                </div>
+            </div>
+            <button id="prev-btn" class="hidden TextContent" onclick="prevQuestion()">Previous</button>
+            <button id="next-btn" class="hidden TextContent" onclick="nextQuestion()">Next</button>
+            
+            <!-- หน้าผลลัพธ์ -->
+            <div id="result" class="hidden TextContent">
+                <p class="TextContent">Your score: <span id="score">0</span></p>
+                <div id="answer-key"></div>
+            </div>
+            <button id="retry-btn" class="hidden TextContent" onclick="retryQuiz()">Retry Quiz</button>
+            <button id="go-to-start-btn" class="hidden TextContent" onclick="goToStart()">Go to Start</button>
+        </div>
+    </div>
+    <script src="script_Quiz.js"></script>
+    <footer class="bottom-footer">
+        <p>จัดทำโดย</p>
+        <p>นายธีรภัทร สิมมาวัน รหัสนักศึกษา 66122420111</p>
+        <p>นายวชรพล ทองบุราณ รหัสนักศึกษา 66122420116</p>
+        <p>&copy; Copyright 2024</p>
+    </footer>
+</body>
+</html>

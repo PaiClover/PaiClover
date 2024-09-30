@@ -1,0 +1,91 @@
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header {
+    background-color: saddlebrown;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-item {
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main-box {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.column {
+    margin: 0 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#timer, #score {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.bottom-footer {
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+}
+
+.matched {
+    background-color: lightgray;
+    color: darkgray;
+}
+
+.TextContent {
+    font-size: 18px;
+}
+
+#svg-lines {
+    z-index: -1;
+}
